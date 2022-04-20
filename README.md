@@ -1,5 +1,3 @@
-
-
 - [Download from Github](https://github.com/kxusx/frontend-knoct) 
 
 - Make sure your NodeJS and npm versions are up to date for `React 17`
