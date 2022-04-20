@@ -56,22 +56,11 @@
     grid-row-end: 4;
 }
 
+.map{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
 
-.c {
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  
-.e {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    color: aquamarine;
-  }
-  
-.b, .j {
-    order: 2;
-  }
-  
-.a, .i {
-    order: 3;
-  }
+

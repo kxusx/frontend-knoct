@@ -55,10 +55,6 @@ const Dashboard = () => (
             <Map />
             </div>
         </div>
-
-
-
-
       </Container>
     </Box>
   </>

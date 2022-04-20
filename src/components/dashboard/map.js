@@ -1,6 +1,11 @@
 import { formatDistanceToNow, subHours } from 'date-fns';
 import { v4 as uuid } from 'uuid';
-
+// const React, { useState } = require('react');
+// const ReactDOM = require('react-dom');
+// const WorldMap = require('react-world-map');
+import MapChart from "./MapChart";
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import {
   Box,
   Button,
@@ -59,8 +64,10 @@ const countries = [
         title="Verification by Country"
       />
       <Divider /> 
-        <Grid>
-            <Grid item xs={12} sm={6}>
+        <Table>
+            <TableBody>
+
+            <TableCell>
                 <Table>
                 <TableBody>
                     {countries.map(country => (
@@ -74,25 +81,29 @@ const countries = [
                             </div>
                           </TableCell>
                         <TableCell>
-                        <div style = {{alignContent:"right"}}>
-                            {country.sales}
+                        <div style = {{alignContent:"right", size:20}}>
+                            Sales : {country.sales} <ArrowUpwardIcon color="success" />
                             </div>
                         </TableCell>
                         <TableCell>
-                        <div style = {{alignContent:"right"}}>
+                        <div style = {{alignContent:"right",size:20}}>
                             {country.per}
                             </div>
                         </TableCell>
                     </TableRow>
-
                     ))}
                 </TableBody>
                 </Table>
              
-            </Grid>
-            
-        </Grid>
- 
+                </TableCell>
+
+            <TableCell>
+            <div>
+                <MapChart />
+            </div>
+            </TableCell>
+            </TableBody>
+            </Table>
       <Divider />
       
     </Card>
