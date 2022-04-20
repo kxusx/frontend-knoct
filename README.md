@@ -2,7 +2,7 @@
 
 ## Quick start
 
-- [Clone from Github](https://github.com/kxusx/frontend-knoct) 
+- [Download from Github](https://github.com/kxusx/frontend-knoct
 
 - Make sure your NodeJS and npm versions are up to date for `React 17`
 
@@ -37,4 +37,5 @@ material-kit-react
 		├── _app.js
 		├── _document.js
 		├── index.js
+		
 ```

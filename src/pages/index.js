@@ -3,7 +3,7 @@ import { Box, Container, Grid } from '@mui/material';
 import { ActiveUsers } from '../components/dashboard/ActiveUsers';
 import { Services } from '../components/dashboard/services';
 import { Notifications } from '../components/dashboard/notifications';
-import { Sales } from '../components/dashboard/sales';
+import { Report } from '../components/dashboard/report';
 import { TasksProgress } from '../components/dashboard/tasks-progress';
 import { InActiveUsers } from '../components/dashboard/InActiveUsers';
 import { TotalProfit } from '../components/dashboard/total-profit';
@@ -27,6 +27,9 @@ const Dashboard = () => (
       }}
     >
       <Container maxWidth={false}>
+        <div style={{size:50, marginLeft:30,marginBottom:20}}>
+        Good Morning , Mark. Welcome to Knoct
+        </div>
         <Grid
           container
           spacing={3}
@@ -54,19 +57,10 @@ const Dashboard = () => (
             item
             lg={8}
             md={12}
-            xl={9}
+            xl={6}
             xs={12}
           >
-            <Sales sx={{ height: '100%' }} />
-          </Grid>
-          <Grid
-            item
-            lg={8}
-            md={12}
-            xl={12}
-            xs={12}
-          >
-            <Services/>
+            <Report sx={{ height: '100%' }} />
           </Grid>
           <Grid
             item
@@ -86,6 +80,16 @@ const Dashboard = () => (
           >
             <Notifications sx={{ height: '100%' }} />
           </Grid>
+          <Grid
+            item
+            lg={8}
+            md={12}
+            xl={6}
+            xs={12}
+          >
+            <Services/>
+          </Grid>
+          
           <Grid
             item
             lg={4}
