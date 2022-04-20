@@ -57,7 +57,7 @@ const Dashboard = () => (
             item
             lg={8}
             md={12}
-            xl={6}
+            xl={12}
             xs={12}
           >
             <Report sx={{ height: '100%' }} />
@@ -66,7 +66,7 @@ const Dashboard = () => (
             item
             lg={4}
             md={6}
-            xl={3}
+            xl={4}
             xs={12}
           >
             <Expenditure sx={{ height: '100%' }} />
@@ -75,10 +75,20 @@ const Dashboard = () => (
             item
             lg={4}
             md={6}
-            xl={3}
+            xl={4}
             xs={12}
           >
             <Notifications sx={{ height: '100%' }} />
+          </Grid>
+
+          <Grid
+            item
+            lg={4}
+            md={6}
+            xl={4}
+            xs={12}
+          >
+            <AccountDetails sx={{ height: '100%' }} />
           </Grid>
           <Grid
             item
@@ -90,15 +100,7 @@ const Dashboard = () => (
             <Services/>
           </Grid>
           
-          <Grid
-            item
-            lg={4}
-            md={6}
-            xl={3}
-            xs={12}
-          >
-            <AccountDetails sx={{ height: '100%' }} />
-          </Grid>
+         
           
         </Grid>
       </Container>
