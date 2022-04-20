@@ -70,7 +70,7 @@ const countries = [
       <Divider /> 
         <Table>
             <TableBody>
-
+            <div style={{marginLeft:50}}>
             <TableCell>
                 <Table>
                 <TableBody>
@@ -112,6 +112,7 @@ const countries = [
                 </Table>
              
                 </TableCell>
+                </div>
 
             <TableCell>
             <div>
