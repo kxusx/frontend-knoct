@@ -1,0 +1,77 @@
+.gridContainer{
+    display: grid;
+    gap: 50px 50px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.activeUser{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: wrap;
+}
+
+.inActiveUser{
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.report{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.notifications{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.expenditure{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.services{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.accountDetails{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+.c {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+.e {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    color: aquamarine;
+  }
+  
+.b, .j {
+    order: 2;
+  }
+  
+.a, .i {
+    order: 3;
+  }

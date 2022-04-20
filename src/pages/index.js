@@ -4,17 +4,16 @@ import { ActiveUsers } from '../components/dashboard/ActiveUsers';
 import { Services } from '../components/dashboard/services';
 import { Notifications } from '../components/dashboard/notifications';
 import { Report } from '../components/dashboard/report';
-import { TasksProgress } from '../components/dashboard/tasks-progress';
+import {Map} from '../components/dashboard/map';
 import { InActiveUsers } from '../components/dashboard/InActiveUsers';
-import { TotalProfit } from '../components/dashboard/total-profit';
-import { TrafficByDevice } from '../components/dashboard/traffic-by-device';
+
 import { DashboardLayout } from '../components/dashboard-layout';
 import { Expenditure } from '../components/dashboard/expenditure';
 import { AccountDetails } from '../components/dashboard/accountDetails';
 
 const Dashboard = () => (
   <>
-    <Head> 
+    <Head>
       <title>
         Dashboard
       </title>
@@ -27,10 +26,54 @@ const Dashboard = () => (
       }}
     >
       <Container maxWidth={false}>
-        <div style={{size:50, marginLeft:30,marginBottom:20}}>
-        Good Morning , Mark. Welcome to Knoct
+        <div style={{ size: 50, marginLeft: 30, marginBottom: 20 }}>
+          Good Morning , Mark. Welcome to Knoct
         </div>
-        <Grid
+        <div class="gridContainer">
+          <div class="activeUsers">
+            <ActiveUsers />
+          </div>
+          <div class="inActiveUsers">
+            <InActiveUsers />
+          </div>
+          <div class="report">
+            <Report sx={{ height: '100%' }} />
+          </div>
+          <div class="notification">
+            <Notifications />
+          </div>
+          <div class="expenditure">
+            <Expenditure />
+          </div>
+          <div class="services">
+            <Services />
+          </div>
+          <div class="accountDetails">
+            <AccountDetails />
+          </div>
+          <div class="map">
+            <Map />
+            </div>
+        </div>
+
+
+
+
+      </Container>
+    </Box>
+  </>
+);
+
+Dashboard.getLayout = (page) => (
+  <DashboardLayout>
+    {page}
+  </DashboardLayout>
+);
+
+export default Dashboard;
+
+//----------------------------------------------------------------------------------------------------------------------
+{/* <Grid
           container
           spacing={3}
         >
@@ -52,6 +95,18 @@ const Dashboard = () => (
           >
             <InActiveUsers sx={{ height: '100%' }} />
           </Grid>
+
+
+            <Grid
+            item
+            lg={8}
+            md={12}
+            xl={4}
+            xs={12}
+          >
+            <Report sx={{ height: '100%' }} />
+          </Grid>
+
         
           <Grid
             item
@@ -102,16 +157,4 @@ const Dashboard = () => (
           
          
           
-        </Grid>
-      </Container>
-    </Box>
-  </>
-);
-
-Dashboard.getLayout = (page) => (
-  <DashboardLayout>
-    {page}
-  </DashboardLayout>
-);
-
-export default Dashboard;
+        </Grid> */}

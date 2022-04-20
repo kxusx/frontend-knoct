@@ -34,18 +34,18 @@ const products = [
     imageUrl: '/static/images/products/r.png',
     updatedAt: "25, Jan 2022"
   },
-//   {
-//     id: uuid(),
-//     name: 'Lyft',
-//     imageUrl: '/static/images/products/product_4.png',
-//     updatedAt: "Today"
-//   },
-//   {
-//     id: uuid(),
-//     name: 'GitHub',
-//     imageUrl: '/static/images/products/product_5.png',
-//     updatedAt: "Today"
-//   }
+  {
+    id: uuid(),
+    name: 'jdhuwhduwhdkjwnf',
+    imageUrl: '/static/images/products/product_4.png',
+    updatedAt: "Today"
+  },
+  // {
+  //   id: uuid(),
+  //   name: 'dhuqhdhquhdkuqd',
+  //   imageUrl: '/static/images/products/product_5.png',
+  //   updatedAt: "Today"
+  // }
 ];
 
 export const AccountDetails = (props) => (
