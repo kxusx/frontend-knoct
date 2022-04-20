@@ -32,6 +32,7 @@ const countries = [
     {
       id: uuid(),
       name: 'Australia',
+      imageUrl: '/static/images/products/aus.png',
       sales: '1,431',
       updatedAt: "Today",
       per: '40%',
@@ -39,6 +40,7 @@ const countries = [
     {
       id: uuid(),
       name: 'Russia',
+      imageUrl: '/static/images/products/rus.png',
       sales:'25,000',
       updatedAt: "Yesterday",
       per: '20%',
@@ -46,12 +48,14 @@ const countries = [
     {
       id: uuid(),
       name: 'United States',
+      imageUrl: '/static/images/products/us.png',
       sales:'15,000',
       per: '15%',
     },
     {
       id: uuid(),
       name: 'China',
+      imageUrl: '/static/images/products/china.png',
       sales:'5000',
       updatedAt: "Today",
       per: '10%',
@@ -75,6 +79,18 @@ const countries = [
                         hover
                         key={country.id}
                       >
+                          <TableCell>
+                          <ListItemAvatar>
+                                <img
+                                
+                                src={country.imageUrl}
+                                style={{
+                                    height: 48,
+                                    width: 48
+                                }}
+                            />
+                             </ListItemAvatar>
+                          </TableCell>
                           <TableCell>
                           <div style = {{alignContent:"right"}}>
                             {country.name}
